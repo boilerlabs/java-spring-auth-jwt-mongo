@@ -23,6 +23,8 @@ A boilerplate starter project for building a Java Spring Boot application with J
 - Profile endpoint for accessing user details
 - Docker Compose for running MongoDB and MongoDB Express
 - MongoDB Integration Including Auditing
+- Jakarta Bean Validation for input validation
+- Swagger UI for API documentation
 
 ## Getting Started
 
