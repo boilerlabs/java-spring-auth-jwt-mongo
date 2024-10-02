@@ -21,6 +21,8 @@ A boilerplate starter project for building a Java Spring Boot application with J
 - Password hashing for secure storage
 - User Sign Up and Sign In endpoints
 - Profile endpoint for accessing user details
+- Docker Compose for running MongoDB and MongoDB Express
+- MongoDB Integration Including Auditing
 
 ## Getting Started
 
@@ -32,7 +34,7 @@ A boilerplate starter project for building a Java Spring Boot application with J
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/boboilerlabs/java-spring-auth-jwt-mongo
+git clone https://github.com/boilerlabs/java-spring-auth-jwt-mongo
 cd java-spring-auth-jwt-mongo
 ```
 
