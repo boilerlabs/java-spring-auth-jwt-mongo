@@ -4,6 +4,8 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import jakarta.validation.constraints.NotEmpty;
+
 @Document(collection = "roles")
 public class Role {
 
@@ -11,6 +13,7 @@ public class Role {
     private String id;
 
     @Indexed(unique = true)
+    @NotEmpty(message = "Name is required")
     private String name;
 
     public Role() {

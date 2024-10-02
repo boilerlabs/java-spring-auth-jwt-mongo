@@ -10,6 +10,9 @@ import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+
 @Document(collection = "users")
 public class User {
 
@@ -17,10 +20,13 @@ public class User {
     private String id;
 
     @Indexed(unique = true)
+    @NotEmpty(message = "Username is required")
     private String username;
 
+    @NotEmpty(message = "Password is required")
     private String password;
 
+    @NotNull(message = "Roles are required")
     private Set<Role> roles = new HashSet<>();
 
     @CreatedDate
